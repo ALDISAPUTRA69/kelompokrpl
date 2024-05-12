@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan</title>
+    <style>
+        /* CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #1a28a0;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .menu a {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #555;
+        }
+        /* Form pemesanan */
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: rgb(13, 31, 133);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0d1f92;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menu Pemesanan</h1>
+    </header>
+    <div class="container">
+            <!-- Form pemesanan -->
+            <form action="#" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                <label for="alamat">Alamat Tujuan:</label>
+                <input type="text" id="alamat" name="alamat" required>
+                <label for="nomor_hp">Nomor HP:</label>
+                <input type="text" id="nomor_hp" name="nomor_hp" required>
+                <label for="metode_pembayaran">Metode Pembayaran:</label>
+                <select id="metode_pembayaran" name="metode_pembayaran" required>
+                    <option value="">Pilih Metode Pembayaran</option>
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="Kartu Kredit">Kartu Kredit</option>
+                    <option value="OVO">OVO</option>
+                    <!-- Tambahkan lebih banyak opsi metode pembayaran sesuai kebutuhan -->
+                </select>
+                <label for="pilihan_pembayaran">Pilihan Pembayaran:</label>
+                <input type="radio" id="pembayaran_langsung" name="pilihan_pembayaran" value="Langsung"> <label for="pembayaran_langsung">Bayar Langsung</label>
+                <input type="radio" id="pembayaran_cicil" name="pilihan_pembayaran" value="Cicil"> <label for="pembayaran_cicil">Cicil</label>
+                <input type="submit" 
+                
+                value="Pesan Sekarang">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
